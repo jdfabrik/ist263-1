@@ -3,6 +3,23 @@
     <head>
         <meta charset="utf-8">
         <title>IST 263 - Unit 3</title>
+        <style>
+            /* Styling based on ID */
+            label[for="age1"] {
+                background-color: red;
+            }
+            label[for="age2"] {
+                background-color: green;
+            }
+            label[for="age3"] {
+                background-color: blue;
+            }
+            
+            /* Styling based on the name */
+            input[name="age"] {
+                outline: 2px solid orange;
+            }
+        </style>
     </head>
     <body>
         <h1>Tables</h1>
@@ -34,8 +51,14 @@
             <br>
             <br>
 
+            <label for="phone number">Type Phone Number</label>
+            <input type="tel" id="phone number">
+
+            <br>
+            <br>
+
             <label for="comments">Comments:</label>
-            <textarea id="comments" name=""comments: rows="4" cols="50">Lorem ipsum...</textarea>
+            <textarea id="comments" name=""comments: rows="4" cols="50" placeholder="Lorem ipsum..."></textarea>
 
             <br>
             <br>
@@ -71,10 +94,12 @@
                 <option value="toyota">Toyota</option>
                 </select>
 
-            <br>
-            <br>
+              <br>
+              <br>
 
             <input type="submit" value="Send Form">
+
+            <img src="./walnut.jpg">
           
 
         </form>
